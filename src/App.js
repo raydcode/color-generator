@@ -32,16 +32,14 @@ function App() {
             Change
           </button>
         </form>
-
-        <section className="colors">
-          {list.map((item, index) => {
-            return (
-              <Color key={index} {...item} index={index} hexColor={item.hex} />
-            );
-          })}
-        </section>
-
-        {/* color */}
+      </section>
+      {/* color */}
+      <section className="colors">
+        {list.map((item, index) => {
+          return (
+            <Color key={index} {...item} index={index} hexColor={item.hex} />
+          );
+        })}
       </section>
     </>
   );
